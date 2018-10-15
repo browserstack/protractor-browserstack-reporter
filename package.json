@@ -1,6 +1,6 @@
 {
   "name": "browserstack-protractor-reporter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A Protractor plugin which enables BrowserStack reports on CI",
   "main": "index.js",
   "keywords": [
