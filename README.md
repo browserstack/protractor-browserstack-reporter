@@ -23,7 +23,7 @@ Add `browserstack` as a plugin in your conf file.
 ```js
 // conf.js
 'plugins': [{
-  'package': "browserstack-protractor-reporter"
+  'package': "protractor-browserstack-reporter"
 }]
 ```
 
