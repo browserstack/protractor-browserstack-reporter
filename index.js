@@ -29,8 +29,12 @@ var myReporter = {
 
   onSingleFileOutput: function (suites) {
     const xml = this.prepareXml(suites)
-    let filename = `REPORT-browserstack.all.xml`
-    this.write(filename, xml)
+    var write = this.write;
+    browser.getProcessedConfig().then(function(config) {
+      var browserName = config.capabilities.browserName;
+      let filename = `REPORT-browserstack.${browserName}.xml`
+      write(filename, xml)
+    });
   },
 
   prepareName: function(name = 'Skipped test') {
