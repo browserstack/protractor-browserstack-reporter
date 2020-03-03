@@ -39,7 +39,7 @@ Type: `String`<br>
 You will have to configure your Jenkins CI server to embed all the BrowserStack Selenium reports and logs in Jenkins.
   1. Click on Add post-build action in Post-build Actions.
   2. Click on Publish JUnit test result report
-  3. In the Test report XMLs, enter **/browserstack-reports/REPORT-\*.xml
+  3. In the Test report XMLs, enter *\*/browserstack-reports/REPORT-\*.xml
   4. In the Additional test report features section, add Embed BrowserStack Report.
 
 This is how your configuration should look like
