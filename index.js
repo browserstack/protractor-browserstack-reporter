@@ -53,8 +53,10 @@ var myReporter = {
       for (let specIndex in suite.specs) {
         const test = suite.specs[specIndex]
         const testName = this.prepareName(test.description)
-        const testCase = testSuite.ele("testcase",{name: testName, id: `${suiteName}.${testName}{0}`, index: 0 });
-        testCase.ele("session", {}, test.sessionID);
+        const { sessionID } = test;
+        const testCase = testSuite.ele("testcase",{name: `${sessionID}_${testName}`, id: `${suiteName}.${testName}{0}`, index: 0 });
+        testCase.ele("session", {}, sessionID);
+        SESSION_ID = test.sessionID;
       }
     }
     return builder.end({ pretty: true});
