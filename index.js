@@ -56,7 +56,6 @@ var myReporter = {
         const { sessionID } = test;
         const testCase = testSuite.ele("testcase",{name: `${sessionID}_${testName}`, id: `${suiteName}.${testName}{0}`, index: 0 });
         testCase.ele("session", {}, sessionID);
-        SESSION_ID = test.sessionID;
       }
     }
     return builder.end({ pretty: true});
