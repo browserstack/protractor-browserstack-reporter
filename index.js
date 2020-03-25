@@ -50,12 +50,16 @@ var myReporter = {
       const suite = suites[suiteIndex]
       const suiteName = this.prepareName(suite.description)
       const testSuite = builder.ele("testsuite", {name: suiteName})
+      let SESSION_ID;
       for (let specIndex in suite.specs) {
         const test = suite.specs[specIndex]
         const testName = this.prepareName(test.description)
-        const testCase = testSuite.ele("testcase",{name: testName, id: `${suiteName}.${testName}{0}`, index: 0 });
-        testCase.ele("session", {}, test.sessionID);
+        const { sessionID } = test;
+        SESSION_ID = sessionID;
+        const testCase = testSuite.ele("testcase",{name: testName, id: `${suiteName}_${sessionID}.${testName}{0}`, index: 0 });
+        testCase.ele("session", {}, sessionID);
       }
+      testSuite.att('name', `${suiteName}_${SESSION_ID}`);
     }
     return builder.end({ pretty: true});
   },
