@@ -2,7 +2,7 @@
 
 A Protractor plugin which enables BrowserStack reports on CI servers
 
-![Browserstack reports on Jenkins](screenshots/jenkins_report.png)
+![Browserstack reports on Jenkins](https://raw.githubusercontent.com/browserstack/protractor-browserstack-reporter/master/screenshots/jenkins_report.png)
 
 ## Installation
 
@@ -11,7 +11,7 @@ Add `protractor-browserstack-reporter` as a dependency in your `package.json`.
 ```json
 {
   "dependencies": {
-    "protractor-browserstack-reporter": "~0.1.0"
+    "protractor-browserstack-reporter": "~0.2.2"
   }
 }
 ```

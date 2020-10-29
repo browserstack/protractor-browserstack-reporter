@@ -1,6 +1,6 @@
 {
   "name": "protractor-browserstack-reporter",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A Protractor plugin which enables BrowserStack reports on CI",
   "main": "index.js",
   "keywords": [
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/browserstack/browserstack-protractor-reporter.git"
+    "url": "git+https://github.com/browserstack/protractor-browserstack-reporter.git"
   },
   "author": "BrowserStack",
   "license": "ISC",
