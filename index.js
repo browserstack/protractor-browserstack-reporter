@@ -1,6 +1,7 @@
 var path = require('path'),
   fs = require('fs'),
-  mkdirp = require('mkdirp');
+  mkdirp = require('mkdirp'),
+  jasmine = require('jasmine');
 
 var suites = {};
 var specs = {};
