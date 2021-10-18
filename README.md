@@ -1,6 +1,6 @@
 # protractor-browserstack-reporter
 
-A Protractor plugin which enables BrowserStack reports on CI servers for jasmine framework only.
+A Protractor plugin(currently supports only jasmine framework) which enables BrowserStack reports on CI servers.
 
 ![Browserstack reports on Jenkins](https://raw.githubusercontent.com/browserstack/protractor-browserstack-reporter/master/screenshots/jenkins_report.png)
 
